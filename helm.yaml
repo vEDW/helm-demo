@@ -2,7 +2,6 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: OCIRepository
 metadata:
   name: cots-demo
-  namespace: default
 spec:
   interval: 1m
   layerSelector:
@@ -16,12 +15,10 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: cots-demo
-  namespace: default
 spec:
   interval: 1m
   chartRef:
     kind: OCIRepository
     name: cots-demo
-    namespace: default
   values:
     replicaCount: 2
