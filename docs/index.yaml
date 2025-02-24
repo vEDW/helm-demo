@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  cots-demo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-02-24T21:13:26.898693+01:00"
+    description: A Helm chart for Next on Tour London COTS demo
+    digest: a9138993aee0a9f209a1d244a8352e4d66e73f2ec0bbb6659d9edef7febeec7a
+    name: cots-demo
+    type: application
+    urls:
+    - charts/cots-demo-0.1.5.tgz
+    version: 0.1.5
+generated: "2025-02-24T21:13:26.898161+01:00"
